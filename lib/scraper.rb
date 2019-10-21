@@ -22,7 +22,7 @@ class Scraper
   end 
   
   def get_courses
-    doc.css(.<h2>Web Development Immersive</h2>.)
+    doc.css(".<h2>Web Development Immersive</h2>.)
   end 
   
 end
