@@ -26,12 +26,8 @@ end
     end
   end
   
-  def get_page
-    doc = Nokogiri::HTML(open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))
-    binding.pry 
-  end 
   
-  def self.get_courses
+  def get_courses
     get_page.css(".post")
   end 
   
