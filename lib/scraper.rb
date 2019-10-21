@@ -29,8 +29,8 @@ class Scraper
   def make_courses
     get_courses.each |course|
     Course.new(course)
+    end 
   end 
-end 
   
 end
 
