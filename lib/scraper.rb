@@ -27,11 +27,11 @@ class Scraper
   end 
   
   def make_courses
-    get_courses.each |course|
+    get_courses.each do |course|
     Course.new(course)
       end 
     end 
-  end 
+
   
 end
 
