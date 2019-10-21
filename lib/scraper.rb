@@ -36,7 +36,8 @@ end
       binding.pry
     course = Course.new
     course.title = doc.css(".post").first.css("h2")
-    course.schedule = 
+    course.schedule = doc.css(".post").first.css(".date").text
+    course.desciption = 
       end 
     end 
 
