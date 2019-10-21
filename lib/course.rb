@@ -1,3 +1,4 @@
 class Course 
-  
+end 
+
 
