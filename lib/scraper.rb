@@ -17,7 +17,9 @@ class Scraper
   end
   
   def get_page
+    html = 
     doc = Nokogiri::HTML(html)
+  end 
   
 end
 
