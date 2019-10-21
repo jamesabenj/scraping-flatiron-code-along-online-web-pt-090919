@@ -5,7 +5,6 @@ require_relative './course.rb'
 
 class Scraper
   
-  attr_accessor :doc 
   
   def print_courses
     self.make_courses
@@ -20,11 +19,11 @@ class Scraper
   
   def get_page
     html = "http://learn-co-curriculum.github.io/site-for-scraping/courses"
-    @doc = Nokogiri::HTML(open(html))
+    doc = Nokogiri::HTML(open(html))
   end 
   
   def get_courses
-    @doc.css(".post.same-height-left.post.post.same-height-right")
+    get_page.css(".post")
   end 
   
 end
