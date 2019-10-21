@@ -35,6 +35,8 @@ end
     get_courses.each do |course|
       binding.pry
     course = Course.new
+    course.title = doc.css(".post").first.css("h2")
+    course.schedule = 
       end 
     end 
 
