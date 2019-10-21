@@ -22,7 +22,7 @@ class Scraper
   end 
   
   def get_courses
-    doc.css(".post.same-height-left.post.post.same-height-right)
+    doc.css(".post.same-height-left.post.post.same-height-right")
   end 
   
 end
