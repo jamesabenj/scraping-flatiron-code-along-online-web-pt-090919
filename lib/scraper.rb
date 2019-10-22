@@ -13,7 +13,6 @@ class Scraper
   
 end 
   
-  Scraper.new.get_page
   
   def print_courses
     self.make_courses
@@ -37,7 +36,7 @@ end
     course = Course.new
     course.title = doc.css(".post").first.css("h2")
     course.schedule = doc.css(".post").first.css(".date").text
-    course.desciption = 
+    course.desciption = doc.css(".post").first.css("p").text
       end 
     end 
 
